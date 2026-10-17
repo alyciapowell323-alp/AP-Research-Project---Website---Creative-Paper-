@@ -1,15 +1,16 @@
 body {
     width: 100vw;
     height: 100vh;
+    overflow-y: auto;
     background-color:#E75480;
 }
 
 .dashboard {
    display:grid;
    grid-template-columns:repeat(3, 1fr);
-    gap: 20px;
-    width:90%;
-    height:95%;
+    gap: 15px;
+    width:95%;
+    height:auto;
 }
 
 .title-card{
