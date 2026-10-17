@@ -1,0 +1,90 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color:#E75480;
+}
+
+.dashboard {
+   display:grid;
+   grid-template-columns:repeat(6, 1fr);
+    gap: 20px;
+    width:90%;
+    height:95%;
+}
+
+.title-card{
+    grid-column: span 6;
+    background-color:lightpink;
+    border: 3px solid white;
+    border-radius: 12px;
+    padding:20px;
+} 
+   
+.problem-card{
+    grid-column: span 3;
+    background-color:lightpink;
+    border: 3px solid white;
+    border-radius: 12px;
+    padding:20px;
+} 
+
+.question-card{
+    grid-column: span 3;
+    background-color:lightpink;
+    border: 3px solid white;
+    border-radius:12px;
+    padding:20px;
+}
+
+.definitions-card {
+    grid-column: span 2; 
+    background-color:lightpink;
+    border: 3px solid white;
+    border-radius:12px;
+    padding:20px;
+}
+
+.datasources-card {
+    grid-column: span 2;
+    background-color: lightpink;
+    border: 3px solid white;
+    border-radius:12px;
+    padding:20px; 
+}
+
+.significance-card {
+    grid-column: span 2;
+    background-color:lightpink;
+    border: 3px solid white;
+    border-radius:12px;
+    padding:20px;
+}
+
+.method-card{
+    grid-column: span 6;
+    background-color:lightpink;
+    border: 3px solid white; 
+    border-radius:12px;
+    padding:20px;
+}
+
+p { 
+    color:black;
+    font-size: 15px;
+}
+
+h1 {
+    color:black;
+    font-size:25px;
+}
+
+h2 {
+    color:#770737;
+    font-size: 20px;
+}
+
+li {
+    color:black;
+    font-size: 14px;
+}
