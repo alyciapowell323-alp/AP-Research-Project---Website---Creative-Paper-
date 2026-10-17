@@ -70,21 +70,22 @@ body {
 }
 
 p { 
-    color:black;
+    color:#000000;
     font-size: 15px;
 }
 
 h1 {
-    color:black;
+    color:#770737;
     font-size:25px;
 }
 
 h2 {
     color:#770737;
     font-size: 20px;
+    margin-bottom: 8px;
 }
 
 li {
-    color:black;
+    color:#000000;
     font-size: 14px;
 }
