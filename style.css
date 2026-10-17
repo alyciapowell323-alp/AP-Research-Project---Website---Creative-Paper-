@@ -1,7 +1,6 @@
 body {
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
     background-color:#E75480;
 }
 
@@ -22,7 +21,7 @@ body {
 } 
    
 .problem-card{
-    grid-column: span 3;
+    grid-column: span 2;
     background-color:lightpink;
     border: 3px solid white;
     border-radius: 12px;
@@ -30,7 +29,7 @@ body {
 } 
 
 .question-card{
-    grid-column: span 3;
+    grid-column: span 1;
     background-color:lightpink;
     border: 3px solid white;
     border-radius:12px;
@@ -38,7 +37,7 @@ body {
 }
 
 .definitions-card {
-    grid-column: span 2; 
+    grid-column: span 1; 
     background-color:lightpink;
     border: 3px solid white;
     border-radius:12px;
@@ -46,7 +45,7 @@ body {
 }
 
 .datasources-card {
-    grid-column: span 2;
+    grid-column: span 1;
     background-color: lightpink;
     border: 3px solid white;
     border-radius:12px;
@@ -54,7 +53,7 @@ body {
 }
 
 .significance-card {
-    grid-column: span 2;
+    grid-column: span 1;
     background-color:lightpink;
     border: 3px solid white;
     border-radius:12px;
@@ -62,7 +61,7 @@ body {
 }
 
 .method-card{
-    grid-column: span 6;
+    grid-column: span 1;
     background-color:lightpink;
     border: 3px solid white; 
     border-radius:12px;
