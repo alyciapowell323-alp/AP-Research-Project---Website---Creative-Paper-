@@ -92,6 +92,7 @@ body {
     border-radius:12px;
     padding:12px;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); 
+    animation: continuousFloat 5s ease-in-out infinite;
 }
 
 .problem-card {grid-column: span 3; animation-delay: 0.3s; }
@@ -101,6 +102,19 @@ body {
 .significance-card {grid-column: span 2; animation-delay: 1.5s;}
 .method-card {grid-column: span 6; animation-delay: 1.8s;}
 
+.title-card, .problem-card, .question-card, .definitions-card, .datasources-card, .significance-card, .method-card {
+    animation: continuousFloat 5s ease-in-out infinite;
+}
+
+.title-card        { animation-delay: 0s; } 
+.problem-card      { animation-delay: 0.3s; }
+.question-card     { animation-delay: 0.6s; }
+.definitions-card  { animation-delay: 0.9s; }
+.datasources-card  { animation-delay: 1.2s; }
+.significance-card { animation-delay: 1.5s; }
+.method-card       { animation-delay: 1.8s; }
+
+
 @keyframes dynamicGradient {
     0% {background-color: #E75480; }
     50% {background-color: #F17599; }
@@ -109,15 +123,9 @@ body {
 }
 
 @keyframes continuousFloat {
-    0% {
-        transform: translateY(0px);
-    }
-    50% {
-        transform: translateY(-6px);
-    }
-    100% {
-        transform: translateY(0px);
-    }
+    0% {  transform: translateY(0px); }
+    50% {   transform: translateY(-6px); }
+    100% {   transform: translateY(0px);  }
 }
 
 p { 
