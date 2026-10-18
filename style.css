@@ -1,14 +1,14 @@
 * {
-    box-sizing:border-box;
-    margin:0;
-    padding:0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    background-color:#E75480;
+    background-color: #E75480;
     margin: 0;
     padding: 15px;
     display: flex;
@@ -17,32 +17,29 @@ body {
     position: relative;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; 
 
+
     background-image:
         radial-gradient(at 0% 0%, rgba(241, 117, 153, 0.5) 0px, transparent 50%),
         radial-gradient(at 100% 100%, rgba(250, 128, 114, 0.4) 0px, transparent 50%), 
-
-        radial-gradient(circle, rgba(255, 255,255, 0.15) 2px, transparent 3px), 
+        radial-gradient(circle, rgba(255, 255, 255, 0.15) 2px, transparent 3px), 
         radial-gradient(circle, rgba(255, 255, 255, 0.1) 1.5px, transparent 2px);
     background-size: 100% 100%, 100% 100%, 40px 40px, 60px 60px;
     background-position: 0 0, 0 0, 0 0, 20px 30px; 
     animation: ambientGlitter 15s linear infinite; 
-
-    animation: dynamicGradient 10s ease-in-out infinite;
-    background-size: 200% 200%;
 }
 
 .dashboard {
-   display:grid;
-   grid-template-columns:repeat(6, 1fr);
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
     grid-template-rows: 10% 28% 34% 18%;
     gap: 15px;
-    width:100%;
-    height:100%;
+    width: 100%;
+    height: 100%;
     z-index: 2;
 }
 
-.title-card, .problem-card, .question-card, .definitions-card, .datasources-card, .significance-card, .method-card 
-{
+
+.title-card, .problem-card, .question-card, .definitions-card, .datasources-card, .significance-card, .method-card {
     background: rgba(255, 235, 240, 0.75); 
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
@@ -53,60 +50,14 @@ body {
     animation: continuousFloat 5s ease-in-out infinite; 
 }
 
-    
-.title-card{
-    grid-column: span 6;
-    border-radius: 12px;
-    padding:10px 20px;
-    display: flex;
-    align-items: center;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); 
-    animation-delay: 0s;
-} 
-   
-.problem-card{
-    grid-column: span 3;
-    border-radius: 12px;
-    padding:12px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); 
-} 
 
-.question-card{
-    grid-column: span 3;
-    border-radius:12px;
-    padding:12px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); 
-}
-
-.definitions-card {
-    grid-column: span 2; 
-    border-radius:12px;
-    padding:12px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); 
-}
-
-.datasources-card {
-    grid-column: span 2;
-    border-radius:12px;
-    padding:12px; 
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); 
-}
-
-.significance-card {
-    grid-column: span 2;
-    border-radius:12px;
-    padding:12px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); 
-}
-
-.method-card{
-    grid-column: span 6;
-    border-radius:12px;
-    padding:12px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); 
-    animation: continuousFloat 5s ease-in-out infinite;
-}
-
+.title-card        { grid-column: span 6; display: flex; align-items: center; animation-delay: 0s; } 
+.problem-card      { grid-column: span 3; animation-delay: 0.4s; } 
+.question-card     { grid-column: span 3; animation-delay: 0.8s; }
+.definitions-card  { grid-column: span 2; animation-delay: 1.2s; }
+.datasources-card  { grid-column: span 2; animation-delay: 1.6s; }
+.significance-card { grid-column: span 2; animation-delay: 2.0s; }
+.method-card       { grid-column: span 6; animation-delay: 2.4s; }
 
 
 @keyframes ambientGlitter {
@@ -115,42 +66,35 @@ body {
         background-color: #E75480;
     }
     50% {
-        background-color: #FA8072;
+        background-color: #FA8072; 
     }
-    100%{
+    100% {
         background-position: 0 0, 0 0, 40px 80px, 80px 150px;
         background-color: #E75480;
     }
 }
 
-
-@keyframes dynamicGradient {
-    0% {background-color: #E75480; }
-    50% {background-color: #F17599; }
-    100% {background-color: #E75480; }
-
-}
-
 @keyframes continuousFloat {
-    0% {  transform: translateY(0px); }
-    50% {   transform: translateY(-7px); }
-    100% {   transform: translateY(0px);  }
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-7px); }
+    100% { transform: translateY(0px); }
 }
 
+/* Typography Scales */
 p { 
-    color:#000000;
+    color: #000000;
     font-size: 13px;
-    line-height:1.45;
+    line-height: 1.45;
 }
 
 h1 {
-    color:#770737;
-    font-size:24px;
-    font-weight:700;
+    color: #770737;
+    font-size: 24px;
+    font-weight: 700;
 }
 
 h2 {
-    color:#770737;
+    color: #770737;
     font-size: 18px;
     margin-bottom: 6px;
     border-bottom: 2px solid rgba(119, 7, 55, 0.1);
@@ -158,7 +102,8 @@ h2 {
 }
 
 li {
-    color:#000000;
+    color: #000000;
     font-size: 12px;
     margin-left: 15px;
 }
+
