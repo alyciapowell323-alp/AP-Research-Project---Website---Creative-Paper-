@@ -10,14 +10,20 @@ body {
     overflow: hidden;
     background-color:#E75480;
     margin: 0;
-    padding: 10px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+
+    animation: dynamicGradient 10s ease-in-out infinite;
+    background-size: 200% 200%;
 }
 
 .dashboard {
    display:grid;
    grid-template-columns:repeat(6, 1fr);
     grid-template-rows: 10% 28% 34% 18%;
-    gap: 12px;
+    gap: 15px;
     width:100%;
     height:100%;
 }
@@ -30,6 +36,8 @@ body {
     padding:10px 20px;
     display: flex;
     align-items: center;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); 
+    animation-delay: 0s;
 } 
    
 .problem-card{
@@ -38,6 +46,7 @@ body {
     border: 3px solid white;
     border-radius: 12px;
     padding:12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); 
 } 
 
 .question-card{
@@ -46,6 +55,7 @@ body {
     border: 3px solid white;
     border-radius:12px;
     padding:12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); 
 }
 
 .definitions-card {
@@ -54,6 +64,7 @@ body {
     border: 3px solid white;
     border-radius:12px;
     padding:12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); 
 }
 
 .datasources-card {
@@ -62,6 +73,7 @@ body {
     border: 3px solid white;
     border-radius:12px;
     padding:12px; 
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); 
 }
 
 .significance-card {
@@ -70,6 +82,7 @@ body {
     border: 3px solid white;
     border-radius:12px;
     padding:12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); 
 }
 
 .method-card{
@@ -78,6 +91,33 @@ body {
     border: 3px solid white; 
     border-radius:12px;
     padding:12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); 
+}
+
+.problem-card {grid-column: span 3; animation-delay: 0.3s; }
+.question-card {grid-column: span 3; animation-delay: 0.6s;}
+.definitions-card {grid-column: span 2; animation-delay: 0.9s; }
+.datasources-card {grid-column: span 2; animation-delay: 1.2s;}
+.significance-card {grid-column: span 2; animation-delay: 1.5s;}
+.method-card {grid-column: span 6; animation-delay: 1.8s;}
+
+@keyframes dynamicGradient {
+    0% {background-color: #E75480; }
+    50% {background-color: #F17599; }
+    100% {background-color: #E75480; }
+
+}
+
+@keyframes continuousFloat {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-6px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
 }
 
 p { 
